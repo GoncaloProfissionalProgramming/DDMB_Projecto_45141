@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">TPCF</string>
+    <string name="app_name">TPCF APP</string>
+    <string name="app_login">TPCF LOGIN</string>
+    <string name="app_registar">TPCF REGISTAR</string>
 </resources>
