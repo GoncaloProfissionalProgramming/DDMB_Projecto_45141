@@ -23,7 +23,19 @@
         <activity
             android:name=".Registar"
             android:label="@string/app_registar" />
-        <activity android:name=".ForgotPass"></activity>
+        <activity
+            android:name=".ForgotPass"
+            android:label="@string/app_forgotPass" />
+        <activity
+            android:name=".PatraoOpt"
+            android:label="@string/app_PatraoOpt" />
+        <activity
+            android:name=".empresa"
+            android:label="@string/app_Empresa" />
+        <activity
+            android:name=".empregadoOpt"
+            android:label="@string/app_EmpregadoOpt"></activity>
+        <activity android:name=".empregados" android:label="@string/app_Empregados"></activity>
     </application>
 
 </manifest>
