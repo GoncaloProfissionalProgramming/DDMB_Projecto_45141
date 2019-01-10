@@ -1,0 +1,142 @@
+body {
+    margin: 0px;
+    font-family: 'segoe ui';
+    font-size: 19px;
+    background-color:#0095D9;
+    height:135%;
+  }  
+
+a{
+    text-decoration: none;
+    color:White;
+}  
+   
+form input {
+    border: 1px solid #0095D9;
+} 
+#divEmail{
+    position:absolute;
+    top:12%;
+    left:5%;
+    background-color:white;
+}
+
+.textboxEmail{
+    position:absolute;
+    top:17%;
+    left:10%;
+    width:80%;
+    height:5%;
+   
+    
+}
+
+#divPassword{
+    position:absolute;
+    top:24%;
+    left:5%;
+}
+
+.textboxPassword{
+    position:absolute;
+    top:29%;
+    left:10%;
+    width:80%;
+    height:5%;
+   
+}
+
+#divNome{
+    position:absolute;
+    top:38%;
+    left:5%;
+}
+
+.textboxNome{
+    position:absolute;
+    top:43%;
+    left:10%;
+    width:80%;
+    height:5%;
+}
+
+#divWOT{
+    position:absolute;
+    top:52%;
+    left:5%;
+}
+
+.textboxWOT{
+    position:absolute;
+    top:57%;
+    left:10%;
+    width:80%;
+    height:5%;
+}
+
+#divSteam{
+    position:absolute;
+    top:65%;
+    left:5%;
+}
+
+.textboxSteam{
+    position:absolute;
+    top:70%;
+    left:10%;
+    width:80%;
+    height:5%;
+}
+
+#divDiscord{
+    position:absolute;
+    top:78%;
+    left:5%;
+}
+
+.textboxDiscord{
+    position:absolute;
+    top:90%;
+    left:10%;
+    width:80%;
+    height:5%;
+}
+
+.buttonRegistar{
+    position:absolute;
+    top:105%;
+    left:0%;
+    width:100%;
+    height:10%;
+    color:#0095D9;
+    font-size: 19px;
+    background-color:white;
+    text-align:center;
+    border: 1px solid white;
+}
+
+#divRegistar{
+    position:absolute;
+    width:90%;
+    height:100%;
+    top:15%;
+    left:4.6%;
+    background-color:white;
+    z-index: 1;
+}
+
+h1{
+    position:absolute;
+    text-align:center;
+    color:White; 
+    top:0%;
+    width:100%;
+}
+
+p{
+    position:absolute;
+    text-align:center;
+    color:black; 
+    top:-1%;
+    width:100%;
+}
