@@ -15,6 +15,7 @@
     border: 0.5px solid black;  
     top:30%;
     color:black;
+    background-color:white;
 }
 
 table {
@@ -27,6 +28,7 @@ table {
     align-items: center;
     text-align:center;
     float: center;
+    background-color:white;
 
 }
 
@@ -34,6 +36,7 @@ th {
     height: 40px;
     text-align:center;
     top:30%;
+    background-color:white;
 } 
 </style>
 <body>

@@ -53,6 +53,7 @@ $conn->close();
     border: 0.5px solid black;  
     top:10%;
     color:black;
+    background-color:white;
 
 }
 
@@ -66,6 +67,7 @@ table {
     align-items: center;
     text-align:center;
     float: center;
+    background-color:white;
 
 }
 
@@ -73,7 +75,7 @@ th {
     height: 40px;
     top:10%;
     text-align:center;
-    
+    background-color:white;
 } 
 
 </style>
