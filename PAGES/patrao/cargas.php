@@ -53,6 +53,7 @@ $conn->close();
     border: 0.5px solid black;  
     top:10%;
     color:black;
+    background-color:white;
 
 }
 
@@ -66,13 +67,14 @@ table {
     align-items: center;
     text-align:center;
     float: center;
-
+    background-color:white;
 }
 
 th {
     height: 40px;
     top:10%;
     text-align:center;
+    background-color:white;
     
 } 
 
@@ -97,8 +99,7 @@ th {
                       <a href="AproveCargas.php">CARGAS POR APROVAR</a>
                       <a href="forminserircargas.php">INSERIR CARGAS</a>
                       <a href="empregados.php">EMPREGADOS</a>
-                      <a href="empregadosporAprovar.php">EMPREGADOS POR APROVAR</a>                      
-                      <a href="registar.php">REGISTAR EMPREGADOS </a>
+                      <a href="empregadosporAprovar.php">EMPREGADOS POR APROVAR</a>
                     </div>
 </div>
 </body>
