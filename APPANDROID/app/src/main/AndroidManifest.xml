@@ -19,6 +19,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".patrao"
+            android:label="@string/app_patrao">
+
+        </activity>
+        <activity android:name=".empregado" android:label="@string/app_empregado"></activity>
     </application>
 
 </manifest>

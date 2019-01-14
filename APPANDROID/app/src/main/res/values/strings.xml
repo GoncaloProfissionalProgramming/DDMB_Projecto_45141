@@ -1,17 +1,6 @@
 <resources>
     <string name="app_name">TPCF APP</string>
-    <string name="app_login">TPCF LOGIN</string>
-    <string name="app_registar">TPCF REGISTAR</string>
-    <string name="app_forgotPass">TPCF RECUPERAR PASSWORD</string>
-    <string name="app_EditAcount">TPCF EDITAR CONTA</string>
-    <string name="app_PatraoOpt">TPCF PATRÃO OPTIONS</string>
-    <string name="app_Empresa">TPCF GESTÃO EMPRESA</string>
-    <string name="app_EmpregadoOpt">TPCF EMPREGADO OPTIONS</string>
-    <string name="app_CargasEmpregados">TPCF CARGAS EMPREGADOS</string>
-    <string name="app_cargasToAprove">TPCF CARGAS PARA APROVAR</string>
-    <string name="app_recrutamento">TPCF RECRUTAMENTO</string>
-    <string name="app_FireEmpregados">TPCF DESPEDIR EMPREGADOS</string>
-    <string name="app_Empregados">TPCF EMPREGADOS</string>
-    <string name="app_FunctionEmpregados">TPCF FUNÇÕES EMPREGADOS</string>
-    <string name="app_MinhasCargas">TPCF MINHAS CARGAS</string>
+    <string name="app_patrao">TPCF PATRAO</string>
+    <string name="app_empregado">TPCF EMPREGADO</string>
+
 </resources>

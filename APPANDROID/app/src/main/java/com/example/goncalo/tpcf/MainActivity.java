@@ -19,16 +19,18 @@ public class MainActivity extends AppCompatActivity {
 
         webview = findViewById(R.id.webview);
 
-        webview.loadUrl("http://goncalocruz.pt/projetoFinal/home.php");
+        webview.getSettings().setJavaScriptEnabled(true);
+        webview.getSettings().setLoadWithOverviewMode(true);
+        webview.getSettings().setUseWideViewPort(true);
+        webview.setWebViewClient(new WebViewClient(){
 
-        webview.setWebViewClient(new WebViewClient() {
-            @Override
-            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                return false;
-            }
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view, String url) {
+            view.loadUrl(url);
+            return true;
+        }
+
         });
-
-
+        webview.loadUrl("http://goncalocruz.pt/projetoFinal/home.php");
     }
-
 }
