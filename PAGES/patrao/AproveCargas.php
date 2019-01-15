@@ -1,0 +1,198 @@
+
+
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/navbar.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+      body {
+    margin: 0px;
+    font-family: 'segoe ui';
+    
+  }    
+    
+  table, td, th {
+    position:relative;
+    border: 0.5px solid black;  
+    top:25%;
+    color:black;
+}
+table {
+    position:relative;
+    border-collapse: collapse;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    top:25%;
+    align-items: center;
+    text-align:center;
+    float: center;
+
+}
+th {
+    position:relative;
+    height: 40px;
+    text-align:center;
+    top:25%;
+}
+
+#divN{
+    position:absolute;
+    width:90%;
+    height:20%;
+    top:25%;
+    left:4.6%;
+    background-color:#0095D9;
+    
+}
+
+p{
+    color:white;
+    font-size:19px;
+    text-align:center;
+    font-weight:bold;
+    padding:16px;
+    
+}
+
+
+#divId{
+    position:absolute;
+    top:3%;
+    left:5%;
+    
+    color:white;
+}
+
+.textboxId{
+    position:absolute;
+    top:27%;
+    left:10%;
+    width:80%;
+    height:20%;
+    
+}
+
+.buttonEnviar{
+    position:absolute;
+    top:60%;
+    left:10%;
+    width:80%;
+    height:30%;
+    color:#0095D9;
+    font-size: 19px;
+    background-color:white;
+    text-align:center;
+    border: 1px solid white;
+    
+}
+
+#divDespedir{
+    position:absolute;
+    width:90%;
+    height:20%;
+    top:8%;
+    left:4.6%;
+    background-color:#0095D9;
+    
+}
+
+form input {
+    border: 1px solid white;
+} 
+
+#divN{
+    position:absolute;
+    width:90%;
+    height:20%;
+    top:25%;
+    left:4.6%;
+    background-color:#0095D9;
+    
+}
+
+p{
+    color:white;
+    font-size:19px;
+    text-align:center;
+    font-weight:bold;
+    padding:16px;
+    
+}
+
+</style>
+<body>
+<div class="nav">
+                    <div class="nav-header">
+                      <div class="nav-title">
+                      TPCF APP
+                      </div>
+                    </div>
+                    <div class="nav-btn">
+                      <label for="nav-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </label>
+                    </div>
+                    <input type="checkbox" id="nav-check">
+                    <div class="nav-links">
+                      <a href="cargas.php">CARGAS EMPREGADOS</a>
+                      <a href="AproveCargas.php">CARGAS POR APROVAR</a>
+                      <a href="forminserircargas.php">INSERIR CARGAS</a>
+                      <a href="empregados.php">EMPREGADOS</a>
+                      <a href="empregadosporAprovar.php">EMPREGADOS POR APROVAR</a>
+                    </div>
+</div>
+<?php
+
+$conn= mysqli_connect("localhost","root", "", "tpcf");
+
+if($conn-> connect_error){
+    die("Connection failed:".$conn-> connect_error);
+
+}
+
+$sql ="SELECT id,userId,Origem,Destino,Peso,Carga FROM cargas where Aproved=\"0\";";
+$result =$conn -> query($sql);
+
+if($result -> num_rows>0){
+    echo"
+    <div id=\"divDespedir\">
+    <form action=\"aproveCarga.php\" id=\"aprove\" method=\"post\">
+    <div id=\"divId\"><label for=\"Nome\">Carga:</div></label>
+    <input class=\"textboxId\" type=\"text\" name=\"id\" maxlength=\"50\" size=\"30\">
+     
+    </form>
+    <button class=\"buttonEnviar\" form=\"aprove\" action=\"submit\">Aprovar Carga</button>
+    </div>";
+  echo"<table>
+      <tr>
+      <th>Id</th>
+      <th>Userid</th>
+      <th>Origem</th>
+      <th>Destino </th>
+      <th>Peso</th>
+      <th>Carga</th>
+      </tr>" ; 
+    while($row=$result-> fetch_assoc()){
+      
+      echo"<tr><td>".$row["id"]."</td><td>".$row["userId"]."</td><td>".$row["Origem"]."</td><td>".$row["Destino"]."</td><td>".$row["Peso"]."t</td><td>".$row["Carga"]."</td></tr>";
+    }
+
+}
+else{
+  echo "<div id=\"divN\">
+  <p>Não existem cargas por Aprovar </p>
+  </div>
+  <img src=\"../img/tpcflogo.png\" alt=\"tpcf\" width=\"50%\" height=\"20%\" style=\" left:25%; position: absolute; top:50%; background-color: white;\">";
+$conn->close();
+
+}
+
+?>
+</body>
+</html>
