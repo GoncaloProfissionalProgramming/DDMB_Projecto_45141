@@ -5,6 +5,13 @@
 
 if(validator()){
     $mysql->inserirCarga($_POST["UserId"], $_POST["Origem"], $_POST["Destino"], $_POST["Peso"], $_POST["Carga"]);
+    echo"<script>
+    window.location.href=' http://127.0.0.1/patrao/AproveCargas.php'
+    </script>";
+}else{
+  echo"<script>
+  window.location.href=' http://127.0.0.1/patrao/forminserircargas.php'
+  </script>";
 }
 
        
