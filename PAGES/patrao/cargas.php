@@ -8,7 +8,7 @@ if($conn-> connect_error){
 
 }
 
-$sql ="SELECT cargas.id,users.Nome,Origem,Destino,Peso,Carga,Dinheiro FROM  cargas INNER JOIN users ON cargas.UserId = users.id WHERE cargas.Aproved=\"1\"";
+$sql ="SELECT cargas.id,users.Nome,Origem,Destino,Peso,Carga FROM  cargas INNER JOIN users ON cargas.UserId = users.id WHERE cargas.Aproved=\"1\"";
 
 $result =$conn -> query($sql);
 
@@ -21,16 +21,18 @@ if($result -> num_rows>0){
       <th>Destino </th>
       <th>Peso</th>
       <th>Carga</th>
-      <th>Dinheiro</th>
       </tr>" ; 
     while($row=$result-> fetch_assoc()){
       
-      echo"<tr><td>".$row["id"]."</td><td>".$row["Nome"]."</td><td>".$row["Origem"]."</td><td>".$row["Destino"]."</td><td>".$row["Peso"]."t</td><td>".$row["Carga"]."</td><td>".$row["Dinheiro"]."€</td></tr>";
+      echo"<tr><td>".$row["id"]."</td><td>".$row["Nome"]."</td><td>".$row["Origem"]."</td><td>".$row["Destino"]."</td><td>".$row["Peso"]."t</td><td>".$row["Carga"]."</td></tr>";
     }
 
 }
 else{
-  echo "Não existem cargas";
+  echo "<div id=\"divN\">
+  <p>Não existem cargas </p>
+  </div>
+  <img src=\"../img/tpcflogo.png\" alt=\"tpcf\" width=\"50%\" height=\"20%\" style=\" left:25%; position: absolute; top:50%; background-color: white;\">";
 $conn->close();
 
 }
@@ -77,7 +79,24 @@ th {
     background-color:white;
     
 } 
+#divN{
+    position:absolute;
+    width:90%;
+    height:20%;
+    top:25%;
+    left:4.6%;
+    background-color:#0095D9;
+    
+}
 
+p{
+    color:white;
+    font-size:19px;
+    text-align:center;
+    font-weight:bold;
+    padding:16px;
+    
+}
 </style>
 <body>
 <div class="nav">
