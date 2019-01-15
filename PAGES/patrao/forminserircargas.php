@@ -1,42 +1,4 @@
-
-<?php
- include("../mysql.php");
- $mysql = Mysql::newConnection();
-
-if(validator()){
-    $mysql->inserirCarga($_POST["UserId"], $_POST["Origem"], $_POST["Destino"], $_POST["Peso"], $_POST["Carga"]);
-    echo"<script>
-    window.location.href=' http://127.0.0.1/patrao/AproveCargas.php'
-    </script>";
-}else{
-  echo"<script>
-  window.location.href=' http://127.0.0.1/patrao/forminserircargas.php'
-  </script>";
-}
-
-       
-      
-      
-function validator()
-{
-    if(
-       !empty($_POST["UserId"])
-       && !empty($_POST["Origem"])
-       && !empty($_POST["Destino"]) 
-       && !empty($_POST["Peso"])
-       && !empty($_POST["Carga"]) 
-
-
-    ) {
-        return true;
-    }     
-    
-    return false;
-}  
-
-
-?>
-<html>
+﻿<html>
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="../css/inserircarga.css">
@@ -76,7 +38,7 @@ function validator()
 </div>
 <h1>Registar Carga</h1>
 <div id="divRegistar">
-<form action="forminserircargas.php" id="insert" method="post">
+<form action="forminserircargas2.php" id="insert" method="post">
 
 <div id="divId"><label for="UserId">Nº de empregado:</div></label>
 <input class="textboxId" type="text" name="UserId" maxlength="50" size="30">
