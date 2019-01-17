@@ -11,23 +11,25 @@ if(validator()){
   if ($result->num_rows == 1){
      
     echo"<script>
-    window.location.href=' http://127.0.0.1/patrao/cargas.php'
+    window.location.href=' http://goncalocruz.pt/projetoFinal/patrao/cargas.php'
     </script>";
    
    }else{
 
     if($result2->num_rows == 1){
         echo"<script>
-        window.location.href=' http://127.0.0.1/empregado/cargas.php'
+        window.location.href=' http://goncalocruz.pt/projetoFinal/empregado/cargas.php'
         </script>";
       }else{
-        echo "Empregado Não Aprovado";
+        echo "<script>
+        window.location.href=' http://goncalocruz.pt/projetoFinal/Nregistado.html'
+        </script>";
    }
 } 
       
 }else{
     echo"<script>
-    window.location.href=' http://127.0.0.1/login.php'
+    window.location.href=' http://goncalocruz.pt/projetoFinal/login.php'
     </script>";
 }
 

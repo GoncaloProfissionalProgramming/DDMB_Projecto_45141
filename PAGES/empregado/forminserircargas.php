@@ -5,6 +5,9 @@
 
 if(validator()){
     $mysql->inserirCarga($_POST["UserId"], $_POST["Origem"], $_POST["Destino"], $_POST["Peso"], $_POST["Carga"]);
+       echo"<script>
+    window.location.href=' http://goncalocruz.pt/projetoFinal/empregado/Nregistado.html'
+    </script>";
 }
 
        
@@ -40,6 +43,7 @@ function validator()
       body {
     margin: 0px;
     font-family: 'segoe ui';
+    background-color:#0095D9;
     
   }    
     
@@ -61,10 +65,9 @@ function validator()
                     <input type="checkbox" id="nav-check">
                     <div class="nav-links">
                       <a href="cargas.php">CARGAS EMPREGADOS</a>
-                      <a href="AproveCargas.php">CARGAS POR APROVAR</a>
                       <a href="forminserircargas.php">INSERIR CARGAS</a>
                       <a href="empregados.php">EMPREGADOS</a>
-                      <a href="empregadosporAprovar.php">EMPREGADOS POR APROVAR</a>
+                       <a href="../login.php">LOG OUT</a>
                     </div>
 </div>
 <h1>Registar Carga</h1>

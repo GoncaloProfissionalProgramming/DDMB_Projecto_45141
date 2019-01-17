@@ -58,6 +58,7 @@ th {
                       <a href="cargas.php">CARGAS</a>
                       <a href="empregados.php">EMPREGADOS</a>      
                       <a href="forminserircargas.php">INSERIR CARGAS</a>
+                       <a href="../login.php">LOG OUT</a>
                     </div>
 </div>
 <table>
@@ -69,7 +70,7 @@ th {
 </tr>
 
 <?php
-$conn= mysqli_connect("localhost","root", "", "tpcf");
+$conn= mysqli_connect("localhost", "goncalo8_goncaloprofissional", "Goncaloprofissional99", "goncalo8_tpcf");
 
 if($conn-> connect_error){
     die("Connection failed:".$conn-> connect_error);
