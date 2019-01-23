@@ -1,0 +1,164 @@
+@media screen and (max-width: 500px) {
+         
+    #divLogusername{
+        position:absolute;
+        top:10%;
+        left:5%;
+        background-color:white;
+    }
+    
+    .textboxLogusername{
+        position:absolute;
+        top:19%;
+        left:10%;
+        width:80%;
+        height:10%;
+        background-color:white;
+    }
+
+    #divLogPassword{
+        position:absolute;
+        top:33%;
+        left:5%;
+        background-color:white;
+    }
+    
+    .textboxLogPassword{
+        position:absolute;
+        top:42%;
+        left:10%;
+        width:80%;
+        height:10%;
+        background-color:white;
+    }
+    
+    .buttonlogin2{
+        position:absolute;
+        top:60%;
+        left:10%;
+        width:80%;
+        height:10%;
+        color:white;
+        font-size: 19px;
+        background-color:#0095D9;
+        text-align:center;
+        border:none;
+    }
+    
+    .buttonRegistar{
+        position:absolute;
+        top:75%;
+        left:10%;
+        width:80%;
+        height:10%;
+        color:white;
+        font-size: 19px;
+        background-color:#0095D9;
+        text-align:center;
+        border:none;
+    }
+    
+    #divLogin {
+        position:absolute;
+        width:90% !important;
+        height:50%;
+        top:25%;
+        left:5% !important;
+        background-color:white;
+        border-radius:15%; 
+    }
+    
+   
+        
+}
+form input {
+    border: 1px solid #0095D9;
+}   
+body {
+    margin: 0px;
+    font-family: 'segoe ui';
+    font-size: 19px;
+    background-color:#0095D9;
+  }  
+
+a{
+    text-decoration: none;
+    color:White;
+}  
+#divLogusername{
+    position:absolute;
+    top:10%;
+    left:5%;
+    background-color:white;
+}
+
+.textboxLogusername{
+    position:absolute;
+    top:19%;
+    left:10%;
+    width:80%;
+    height:10%;
+    background-color:white;
+}
+#divLogPassword{
+    position:absolute;
+    top:33%;
+    left:5%;
+    background-color:white;
+}
+
+.textboxLogPassword{
+    position:absolute;
+    top:42%;
+    left:10%;
+    width:80%;
+    height:10%;
+    background-color:white;
+}
+
+.buttonlogin2{
+    position:absolute;
+    top:60%;
+    left:10%;
+    width:80%;
+    height:10%;
+    color:white;
+    font-size: 19px;
+    background-color:#0095D9;
+    text-align:center;
+    border:none;
+}
+
+.buttonRegistar{
+    position:absolute;
+    top:75%;
+    left:10%;
+    width:80%;
+    height:10%;
+    color:white;
+    font-size: 19px;
+    background-color:#0095D9;
+    text-align:center;
+    border:none;
+}
+
+
+
+h1{
+    position:absolute;
+    text-align:center;
+    color:White; 
+    top:5%;
+    width:100%;
+}
+
+#divLogin{
+    position:absolute;
+    width:50%;
+    height:50%;
+    top:25%;
+    left:25%;
+    background-color:white;
+    border-radius:15%; 
+
+}
