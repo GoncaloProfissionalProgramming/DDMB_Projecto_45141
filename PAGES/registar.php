@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body>  
 <h1>Registar</h1>
 <div id="divRegistar">
           <p>Atenção os dados inseridos não poderão ser alterados</p> 
@@ -25,6 +25,8 @@
         <input class="textboxDiscord" type="text" name="discord" maxlength="50" size="30">
     </form>
     <button class="buttonRegistar" form="Registar" action="submit">Registar</button>
+    <button class="buttonBack"><a href="login.php">Voltar ao Login</button></a>
+
 </div>
 </body>
 </html>
