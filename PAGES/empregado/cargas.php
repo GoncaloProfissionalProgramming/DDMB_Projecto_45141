@@ -30,7 +30,7 @@ if($result -> num_rows>0){
 }
 else{
   echo "<div id=\"divN\">
-  <p><br>Não existem cargas </p>
+  <p>Não existem cargas </p>
   </div>
   <img src=\"../img/tpcflogo.png\" alt=\"tpcf\">";
 $conn->close();
@@ -45,79 +45,78 @@ $conn->close();
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <style>
-
-@media screen and (max-width: 500px) {
+  @media screen and (max-width: 500px) {
          
-    img{
-        position:absolute;
-        width:50% !important;
-        height:20%;
-        left:25% !important;
-        top:50%;
-        background-color:white;
-    }
+         img{
+             position:absolute;
+             width:50% !important;
+             height:20%;
+             left:25% !important;
+             top:50%;
+             background-color:white;
+         }
+     }
+     
+         img{
+             position:absolute;
+             width:20%;
+             height:20%;
+             left:40%;
+             top:50%;
+             background-color:white;
+         }
+      body {
+    margin: 0px;
+    font-family: 'segoe ui';
+    
+  }    
+    
+  table, td, th {
+    border: 0.5px solid black;  
+    top:10%;
+    color:black;
+    background-color:white;
+
 }
 
-    img{
-        position:absolute;
-        width:20%;
-        height:20%;
-        left:40%;
-        top:50%;
-        background-color:white;
-    }
-    
-    body {
-        margin: 0px;
-        font-family: 'segoe ui';
-    }        
-    
-    table, td, th {
-        border: 0.5px solid black;  
-        top:10%;
-        color:black;
-        background-color:white;
-    }
+table {
+    border-collapse: collapse;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    top:10%;
+    align-items: center;
+    text-align:center;
+    float: center;
+    background-color:white;
+}
 
-    table {
-        border-collapse: collapse;
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 5%;
-        top:10%;
-        align-items: center;
-        text-align:center;
-        float: center;
-        background-color:white;
-    }
+th {
+    height: 40px;
+    top:10%;
+    text-align:center;
+    background-color:white;
+    
+} 
+#divN{
+    position:absolute;
+    width:90%;
+    height:20%;
+    top:25%;
+    left:4.6%;
+    background-color:#0095D9;
+    
+}
 
-    th{
-        height: 40px;
-        top:10%;
-        text-align:center;
-        background-color:white;
-        
-    } 
+p{
+    color:white;
+    font-size:19px;
+    text-align:center;
+    font-weight:bold;
+    padding:16px;
     
-    #divN{
-        position:absolute;
-        width:90%;
-        height:20%;
-        top:25%;
-        left:4.6%;
-        background-color:#0095D9;
-    }
-    
-    p{
-        color:white;
-        font-size:19px;
-        text-align:center;
-        font-weight:bold;
-        padding:16px;
-    }
-    
-    
+}
 </style>
 <body>
 <div class="nav">
@@ -136,11 +135,9 @@ $conn->close();
                     <input type="checkbox" id="nav-check">
                     <div class="nav-links">
                       <a href="cargas.php">CARGAS EMPREGADOS</a>
-                      <a href="AproveCargas.php">CARGAS POR APROVAR</a>
                       <a href="forminserircargas.php">INSERIR CARGAS</a>
                       <a href="empregados.php">EMPREGADOS</a>
-                      <a href="empregadosporAprovar.php">EMPREGADOS POR APROVAR</a>
-                       <a href="../login.php">LOG OUT</a>
+                      <a href="../login.php">LOG OUT</a>
                     </div>
 </div>
 </body>

@@ -1,4 +1,5 @@
-﻿<html>
+
+<html>
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="../css/inserircarga.css">
@@ -9,7 +10,7 @@
       body {
     margin: 0px;
     font-family: 'segoe ui';
-    
+    background-color:#0095D9;
   }    
     
 
@@ -34,11 +35,12 @@
                       <a href="forminserircargas.php">INSERIR CARGAS</a>
                       <a href="empregados.php">EMPREGADOS</a>
                       <a href="empregadosporAprovar.php">EMPREGADOS POR APROVAR</a>
+                       <a href="../login.php">LOG OUT</a>
                     </div>
 </div>
 <h1>Registar Carga</h1>
 <div id="divRegistar">
-<form action="forminserircargas2.php" id="insert" method="post">
+<form action="Forminserircargas.php" id="insert" method="post">
 
 <div id="divId"><label for="UserId">Nº de empregado:</div></label>
 <input class="textboxId" type="text" name="UserId" maxlength="50" size="30">
@@ -49,14 +51,14 @@
 <div id="divDestino"><label for="Destino">Destino:</div></label>
 <input class="textboxDestino" type="text" name="Destino" maxlength="50" size="30">
 
-<div id="divPeso"><label for="Peso">Peso:</div></label>
+<div id="divPeso"><label for="Peso">Peso: (toneladas)</div></label>
 <input class="textboxPeso" type="text" name="Peso" maxlength="50" size="30">
 
 <div id="divCarga"><label for="Carga">Carga:</div></label>
 <input class="textboxCarga" type="text" name="Carga" maxlength="50" size="30">
 
 </form>
-<button class="buttonRegistar" form="insert" action="submit">Enviar</button>
+<button class="buttonRegistar" form="insert" action="submit">Inserir Carga</button>
 
 </div>
 </body>

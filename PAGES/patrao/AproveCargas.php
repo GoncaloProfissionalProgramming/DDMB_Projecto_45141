@@ -1,12 +1,33 @@
 
 
 <html>
-<head>
-<meta charset="UTF-8">
+<head><meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+
 <link rel="stylesheet" href="../css/navbar.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <style>
+
+@media screen and (max-width: 500px) {
+         
+    img{
+        position:absolute;
+        width:50% !important;
+        height:20%;
+        left:25% !important;
+        top:50%;
+        background-color:white;
+    }
+}
+
+    img{
+        position:absolute;
+        width:20%;
+        height:20%;
+        left:40%;
+        top:50%;
+        background-color:white;
+    }
       body {
     margin: 0px;
     font-family: 'segoe ui';
@@ -145,11 +166,12 @@ p{
                       <a href="forminserircargas.php">INSERIR CARGAS</a>
                       <a href="empregados.php">EMPREGADOS</a>
                       <a href="empregadosporAprovar.php">EMPREGADOS POR APROVAR</a>
+                       <a href="../login.php">LOG OUT</a>
                     </div>
 </div>
 <?php
 
-$conn= mysqli_connect("localhost","root", "", "tpcf");
+$conn= mysqli_connect("localhost", "root", "", "tpcf");
 
 if($conn-> connect_error){
     die("Connection failed:".$conn-> connect_error);
@@ -186,9 +208,9 @@ if($result -> num_rows>0){
 }
 else{
   echo "<div id=\"divN\">
-  <p>Não existem cargas por Aprovar </p>
+  <p><br>Não existem cargas por Aprovar </p>
   </div>
-  <img src=\"../img/tpcflogo.png\" alt=\"tpcf\" width=\"50%\" height=\"20%\" style=\" left:25%; position: absolute; top:50%; background-color: white;\">";
+  <img src=\"../img/tpcflogo.png\" alt=\"tpcf\">";
 $conn->close();
 
 }

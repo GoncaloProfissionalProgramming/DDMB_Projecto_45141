@@ -106,6 +106,7 @@ form input {
                       <a href="forminserircargas.php">INSERIR CARGAS</a>
                       <a href="empregados.php">EMPREGADOS</a>
                       <a href="empregadosporAprovar.php">EMPREGADOS POR APROVAR</a>
+                       <a href="../login.php">LOG OUT</a>
                     </div>
 </div>
 
@@ -113,7 +114,8 @@ form input {
 
 
 <?php
-$conn= mysqli_connect("localhost","root", "", "tpcf");
+$conn= mysqli_connect("localhost", "root", "", "tpcf");
+
 
 if($conn-> connect_error){
     die("Connection failed:".$conn-> connect_error);

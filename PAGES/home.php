@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="../css/navbar.css">
+        <link rel="stylesheet" href="css/navbar.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <style>
@@ -83,7 +83,7 @@
     </style>
     <body>
     <h2 style="">TPCF APP</h2>
-    <img src="../img/tpcflogo.png" alt="tpcf" class="img">
+    <img src="img/tpcflogo.png" alt="tpcf" class="img">
     <button class="button"><a href="login.php">LOGIN</a></button>
     </body>
 </html>

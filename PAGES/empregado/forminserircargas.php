@@ -6,7 +6,7 @@
 if(validator()){
     $mysql->inserirCarga($_POST["UserId"], $_POST["Origem"], $_POST["Destino"], $_POST["Peso"], $_POST["Carga"]);
        echo"<script>
-    window.location.href=' http://goncalocruz.pt/projetoFinal/empregado/Nregistado.html'
+    window.location.href=' 127.0.0.1/projetoFinal/empregado/Nregistado.html'
     </script>";
 }
 
@@ -83,7 +83,7 @@ function validator()
 <div id="divDestino"><label for="Destino">Destino:</div></label>
 <input class="textboxDestino" type="text" name="Destino" maxlength="50" size="30">
 
-<div id="divPeso"><label for="Peso">Peso:</div></label>
+<div id="divPeso"><label for="Peso">Peso: (toneladas)</div></label>
 <input class="textboxPeso" type="text" name="Peso" maxlength="50" size="30">
 
 <div id="divCarga"><label for="Carga">Carga:</div></label>

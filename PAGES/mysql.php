@@ -28,16 +28,15 @@ class Mysql
 
         $result = $this->mysqli->query($query);
     }
-    public function inserirCarga($UserId, $Origem, $Destino, $Peso, $Carga, $Camiao, $Dinheiro)    {
+    public function inserirCarga($UserId, $Origem, $Destino, $Peso, $Carga)    {
         $UserId = $this->mysqli->real_escape_string($UserId);
         $Origem = $this->mysqli->real_escape_string($Origem);
         $Destino = $this->mysqli->real_escape_string($Destino);
         $Peso = $this->mysqli->real_escape_string($Peso);
         $Carga = $this->mysqli->real_escape_string($Carga);
-        $Camiao = $this->mysqli->real_escape_string($Camiao);
-        $Dinheiro = $this->mysqli->real_escape_string($Dinheiro);
+      
 
-        $query="insert into cargas(UserId, Origem, Destino, Peso, Carga, Camiao, Dinheiro) values('" . $UserId ."','" . $Origem ."','" . $Destino ."','" . $Peso ."','" . $Carga ."','" . $Camiao ."','" . $Dinheiro ."')";
+        $query="insert into cargas(UserId, Origem, Destino, Peso, Carga) values('" . $UserId ."','" . $Origem ."','" . $Destino ."','" . $Peso ."','" . $Carga ."')";
 
         $result = $this->mysqli->query($query);
     }     
@@ -108,7 +107,8 @@ class Mysql
  
     
     public static function newConnection()    {
-        return new self("localhost", "root", "", "tpcf");
+        return new self("localhost", "", "root", "tpcf");
+
     }
 
 }

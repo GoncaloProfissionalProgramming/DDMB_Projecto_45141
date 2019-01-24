@@ -70,7 +70,7 @@ th {
 </tr>
 
 <?php
-$conn= mysqli_connect("localhost", "goncalo8_goncaloprofissional", "Goncaloprofissional99", "goncalo8_tpcf");
+$conn= mysqli_connect("localhost", "root", "", "tpcf");
 
 if($conn-> connect_error){
     die("Connection failed:".$conn-> connect_error);

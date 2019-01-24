@@ -6,7 +6,7 @@ $mysql = Mysql::newConnection();
 if(validator()){
    $mysql->aproveCarga($_POST["id"]);
    echo"<script>
-    window.location.href=' http://127.0.0.1/patrao/AproveCargas.php'
+    window.location.href=' 127.0.0.1/projetoFinal/patrao/AproveCargas.php'
     </script>";
 }
 
