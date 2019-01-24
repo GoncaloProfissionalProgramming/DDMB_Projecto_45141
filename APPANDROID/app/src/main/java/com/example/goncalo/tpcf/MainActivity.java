@@ -31,6 +31,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         });
-        webview.loadUrl("http://goncalocruz.pt/projetoFinal/home.php");
+        webview.loadUrl("http://goncalocruz.pt/projetoFinal");
     }
 }

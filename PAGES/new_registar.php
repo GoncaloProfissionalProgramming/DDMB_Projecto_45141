@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 include("mysql.php");
 $mysql = Mysql::newConnection();
 
@@ -22,7 +22,7 @@ if(validator()){
 
 }else{
   echo"<script>
-    window.location.href=' http://goncalocruz.pt/projetoFinal/registar.php'
+    window.location.href=' 127.0.0.1/projetoFinal/registar.php'
     </script>";
 }
 

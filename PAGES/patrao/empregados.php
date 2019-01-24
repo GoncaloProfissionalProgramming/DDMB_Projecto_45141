@@ -1,11 +1,21 @@
-<html>
+﻿<html>
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="../css/navbar.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <style>
-   
+   @media screen and (max-width:500px){
+#divDespedir{
+    position:absolute;
+    width:90%;
+    height:20%;
+    top:10% !important;
+    left:4.6%;
+    background-color:#0095D9;
+    
+}
+   }
 body {
     margin: 0px;
     font-family: 'segoe ui';
