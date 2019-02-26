@@ -15,7 +15,7 @@ class Mysql
         }
 	}
     
-    public function newEmpregado($email, $password, $nome, $worldOfTrucks, $steam, $discord)    {
+    public function newEmpregado($email, $password, $nome, $worldOfTrucks, $steam, $discord,$isAdmin=0)    {
         $email = $this->mysqli->real_escape_string($email);
         $password = sha1($this->mysqli->real_escape_string($password));
         $nome = $this->mysqli->real_escape_string($nome);
@@ -24,7 +24,7 @@ class Mysql
         $discord = $this->mysqli->real_escape_string($discord);
        
 
-        $query="insert into users(email, password, nome, worldOfTrucks, steam, discord) values('" . $email ."','" . $password ."','" . $nome ."','" . $worldOfTrucks ."','" . $steam ."','" . $discord ."')";
+        $query="insert into users(email, password, nome, worldOfTrucks, steam, discord,isAdmin) values('" . $email ."','" . $password ."','" . $nome ."','" . $worldOfTrucks ."','" . $steam ."','" . $discord ."',$isAdmin)";
 
         $result = $this->mysqli->query($query);
     }
@@ -88,8 +88,7 @@ class Mysql
     public function getLoginEmpregado($email, $password)	{
         $email = $this->mysqli->real_escape_string($email);
         $password =sha1($this->mysqli->real_escape_string($password));
-
-        $query = "SELECT email, password, isAdmin, Aproved from users where email='" . $email ."'and password='" . $password ."' and isAdmin=\"0\" and Aproved=\"1\"";
+        $query = "SELECT email, password, isAdmin, Aproved from users where email='" . $email ."'and password='" . $password ."' and Aproved=\"1\"";
         $result = $this->mysqli->query($query);
         
         return $result;
@@ -107,7 +106,7 @@ class Mysql
  
     
     public static function newConnection()    {
-        return new self("localhost", "", "root", "tpcf");
+        return new self("localhost", "", "", "");
 
     }
 
