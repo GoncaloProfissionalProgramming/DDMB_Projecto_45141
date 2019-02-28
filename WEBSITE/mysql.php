@@ -106,7 +106,7 @@ class Mysql
  
     
     public static function newConnection()    {
-        return new self("localhost", "", "", "");
+        return new self("localhost", "root", "", "tpcf");
 
     }
 

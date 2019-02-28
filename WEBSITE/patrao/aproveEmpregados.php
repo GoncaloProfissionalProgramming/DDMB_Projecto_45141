@@ -6,7 +6,7 @@ $mysql = Mysql::newConnection();
 if(validator()){
    $mysql->aproveEmpregado($_POST["id"]);
    echo"<script>
-    window.location.href=' 127.0.0.1/projetoFinal/patrao/empregadosporAprovar.php'
+    window.location.href=' 127.0.0.1/patrao/empregadosporAprovar.php'
     </script>";
 }
 

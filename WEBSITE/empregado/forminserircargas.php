@@ -6,7 +6,7 @@
 if(validator()){
     $mysql->inserirCarga($_POST["UserId"], $_POST["Origem"], $_POST["Destino"], $_POST["Peso"], $_POST["Carga"]);
        echo"<script>
-    window.location.href=' 127.0.0.1/projetoFinal/empregado/Nregistado.html'
+    window.location.href=' 127.0.0.1/empregado/Nregistado.html'
     </script>";
 }
 
